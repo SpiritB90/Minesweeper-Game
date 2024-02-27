@@ -8,6 +8,8 @@ let bombs = []
 function startGame() {
   initializeBoard()
   createBoard()
+  plantBombs()
+  calculateNetighborBombs()
 }
 
 function initializeBoard() {
@@ -36,5 +38,29 @@ function createBoard() {
     }
 }
 
+function plantBombs() {
+    let bombsPlanted = 0;
+    while (bombsPlanted < totalBombs) {
+      const row = Math.floor(Math.random() * rows);
+      const col = Math.floor(Math.random() * cols);
+      if (!board[row][col].isBomb) {
+        board[row][col].isBomb = true;
+        bombs.push([row, col]);
+        bombsPlanted++;
+      }
+    }
+  }
+
+  function calculateNeighborBombs() {
+    for (const [row, col] of bombs) {
+      for (let i = row - 1; i <= row + 1; i++) {
+        for (let j = col - 1; j <= col + 1; j++) {
+          if (i >= 0 && i < rows && j >= 0 && j < cols && !board[i][j].isBomb) {
+            board[i][j].neighbors++;
+          }
+        }
+      }
+    }
+  }
 
 startGame()
