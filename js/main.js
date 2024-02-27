@@ -32,7 +32,7 @@ function presentBombs() {
   }
 }
 
-function createNeighborbombs() {
+function numOfNeighborbombs() {
   for (let i = 0; i < bombs.length; i++) {
     let bomb = bombs[1]
     for (let row = bomb.row -1; row <= bomb.row + 1; row++) {
