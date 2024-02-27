@@ -50,7 +50,7 @@ function numOfNeighborbombs() {
 function startGame () {
     initializeBoard()
     presentBombs()
-    createNeighborbombs()
+    numOfNeighborbombs()
 }
 
 startGame()
