@@ -13,13 +13,13 @@ function initializeBoard() {
         isBomb: false,
         isCellOpened: false,
         neighborBombs: 0
-      };
+      }
     }
   }
 }
 
 function presentBombs() {
-  let bombsPlanted = 0;
+  let bombsPlanted = 0
   while (bombsPlanted < totalBombs) {
     const row = Math.floor(Math.random() * rows)
     const col = Math.floor(Math.random() * cols)
@@ -45,12 +45,27 @@ function numOfNeighborbombs() {
   }
 }
 
+function createBoard() {
+  const container = document.querySelector('.container')
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const cell = document.createElement('div');
+      cell.className = 'cell'
+      cell.id = `cell-${r}-${c}`
+      cell.addEventListener('click', function() {
+        revealCell(r, c)
+      })
+      container.appendChild(cell)
+    }
+  }
+}
 
 
 function startGame () {
     initializeBoard()
     presentBombs()
     numOfNeighborbombs()
+    createBoard()
 }
 
 startGame()

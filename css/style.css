@@ -1,6 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(10, 30px);
     grid-template-rows: repeat(10, 30px);
     gap: 1px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #a52b2b;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
   }
