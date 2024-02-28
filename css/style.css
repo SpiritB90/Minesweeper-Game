@@ -5,18 +5,28 @@ body {
   height: 100vh;
 }
 
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(10, 30px);
-    grid-template-rows: repeat(10, 30px);
-    gap: 1px;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
   }
 
   .cell {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #a52b2b;
+    width: 53px;
+    height: 53px;
+    border: 1px solid #0b84b5;
     text-align: center;
-    line-height: 60px;
+    line-height: 53px;
     cursor: pointer;
   }
