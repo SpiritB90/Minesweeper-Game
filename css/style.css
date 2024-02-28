@@ -26,7 +26,12 @@ h1 {
     width: 53px;
     height: 53px;
     border: 1px solid #0b84b5;
-    text-align: center;
+    /* text-align: center; */
     line-height: 53px;
     cursor: pointer;
+  }
+
+  .gray-neighbors {
+    background-color: lightgray;
+    pointer-events: none;
   }
