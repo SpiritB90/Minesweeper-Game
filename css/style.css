@@ -12,6 +12,7 @@ h1 {
   transform: translateX(-50%);
   text-align: center;
   margin: 0;
+
   font-size: 24px;
 }
 
@@ -20,7 +21,12 @@ h1 {
     grid-template-columns: repeat(10, 50px);
     grid-template-rows: repeat(10, 50px);
     gap: 5px;
+    position: absolute;
+    min-height: 50px;
+    min-width: 100px;
+    top: 74px;
   }
+
 
   .cell {
     width: 53px;
@@ -28,6 +34,7 @@ h1 {
     border: 1px solid #0b84b5;
     line-height: 53px;
     cursor: pointer;
+    position: relative;
   }
 
   .gray-neighbors {
@@ -35,14 +42,20 @@ h1 {
     pointer-events: none;
   }
 
-  #gameOverMessage {
-    display: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-    margin-top: 10px;
-  }
-
   .red-cell {
     background-color: red;
+  }
+
+  #refreshBtn {
+    border-radius: 40px;
+    position: absolute;
+    bottom: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  #game-over {
+    position: absolute;
+    bottom: 37px; 
   }
