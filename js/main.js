@@ -68,6 +68,7 @@ function createBoard() {
 
       cell.style.fontSize = '25px'
       cell.style.textAlign = 'center'
+      cell.style.color = 'beige'
 
       container.appendChild(cell)
     }

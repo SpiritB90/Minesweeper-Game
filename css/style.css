@@ -3,6 +3,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #000000;
+  font-family: monospace
 }
 
 h1 {
@@ -12,8 +14,8 @@ h1 {
   transform: translateX(-50%);
   text-align: center;
   margin: 0;
-
   font-size: 24px;
+  color: rgba(206, 197, 197, 0.645);
 }
 
 .container {
@@ -25,20 +27,21 @@ h1 {
     min-height: 50px;
     min-width: 100px;
     top: 74px;
+    background-color: rgb(16, 16, 16);
   }
 
 
   .cell {
     width: 53px;
     height: 53px;
-    border: 1px solid #0b84b5;
+    border: 1px solid #e7eaec;
     line-height: 53px;
     cursor: pointer;
     position: relative;
   }
 
   .gray-neighbors {
-    background-color: lightgray;
+    background-color: darkgray;
     pointer-events: none;
   }
 
@@ -49,13 +52,16 @@ h1 {
   #refreshBtn {
     border-radius: 40px;
     position: absolute;
-    bottom: 70px; 
+    bottom: 71px; 
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    background-color: aqua;
   }
 
   #game-over {
     position: absolute;
-    bottom: 37px; 
+    bottom: 32px; 
+    color: rgba(224, 41, 41, 0.647);
+    font-size: 24px;
   }
