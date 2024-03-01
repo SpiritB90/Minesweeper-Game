@@ -15,3 +15,9 @@
 ## Play MINESWEEPER Here!  ⬇️
 
 https://spiritb90.github.io/Minesweeper-Game/ 
+
+
+## Future Enhancements
+
+*Add a win feature for the user <br>
+*Add a media query to adjust for smaller screens
