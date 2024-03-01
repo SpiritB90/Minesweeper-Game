@@ -1,6 +1,6 @@
 #  💣 MINESWEEPER  🔢
 
-#### Minesweeper is a vintage puszzle game originally created in 1989 and published by Microsoft Corporation.  It's a logic based game that allows the to user to reveal cells on the grid that hides numbers and bombs/mines that are radomized on the board.  
+#### Minesweeper is a vintage puzzle game originally created in 1989 and published by Microsoft Corporation.  It's a logic based game that allows the to user to reveal cells on the grid that hides numbers and bombs/mines that are randomized on the board.  
 
 
 
