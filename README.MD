@@ -13,3 +13,5 @@
 *Emojipedia.org
 
 ## Play MINESWEEPER Here!  ⬇️
+
+https://spiritb90.github.io/Minesweeper-Game/
